@@ -7,8 +7,8 @@ import CreateLocation from './pages/CreateLocation';
 const Routes = () => {
     return (
         <BrowserRouter>
-            <Route element={Home} path="/" />
-            <Route element={CreateLocation} path="/create-location" />
+            <Route component={Home} path="/" exact />
+            <Route component={CreateLocation} path="/create-location" />
         </BrowserRouter>
     );
 }
